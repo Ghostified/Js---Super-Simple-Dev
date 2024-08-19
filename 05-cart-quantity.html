@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity</title>
+</head>
+<body>
+  <Button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    "> Show Quantity</Button>
+
+  <button onclick="
+    cartQuantity++;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+  >Add to Cart</button>
+
+  <button onclick="
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+  "> +2 </button>
+
+  <button onclick="
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+3</button>
+
+  <button onclick="
+  cartQuantity = 0;
+  console.log('Cart was Reset.');
+  console.log(`Cart Quantity : ${cartQuantity}`)
+  ">Reset Cart</button>
+  
+  <script>
+    let cartQuantity = 0;
+    const name = `Branson`;
+
+    console.log(`My name is:  ${name}`);
+
+    const bagel = 2;
+    const coffee = 5;
+    const soup = 9;
+    const cost = bagel + coffee + soup;
+    console.log(cost);
+    console.log(`The cost of food: ${cost}`);
+    const totalTax = cost * 0.1;
+    console.log(totalTax);
+    console.log(`The total cost of food = $${cost + totalTax}`)
+  </script>
+</body>
+</html>
