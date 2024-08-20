@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolleans</title>
+  </head>
+  <body>
+    
+    <script>
+      /*
+      true
+      false
+      console.log(3 > 5 + 3);
+      console.log(3 == 5);
+
+      console.log(5 !== '5.00')
+
+      if (false) {
+        console.log('hello')
+      } else {
+        console.log('else')
+      }
+
+      
+      const drivingAge = 17;
+
+      if ( 11 >= drivingAge) {
+        console.log('You can drive')
+      } else if ( drivingAge >= 14 ) {
+        console.log('Almost there');
+      }else {
+        console.log('You can not drive')
+      };
+      */
+
+      /*
+      //Truthy and Falsy Values
+      if(0){
+        console.log('truthy');
+      } else if (true){
+        console.log('falsy')
+      }
+
+      const  cartQuantity = 5;
+
+      if(cartQuantity){
+        console.log('Cart has products');
+      }
+
+      console.log(!0);
+      console.log('text' / 5); //NaN represents undefined maths
+
+      let myVar;
+      console.log(myVar) //Represents the variable  does not have a value
+
+      */
+
+      //Ternary operator -> is like an if else statement
+      const result = 0 ? 'truthy' : 'falsy'
+      console.log(result);
+
+      //Guard Operator && is a short circuit operator, 
+      false && console.log('Hello');
+      const message = false && 'Hello'
+      console.log(message);
+
+      //Default operator, Or Operator, checks if one side is true is a short circuit
+      let currency = 'EUR' || 'USD';
+      console.log(currency);
+
+      currency = undefined || 'usd';
+      console.log(currency);
+
+      
+
+      
+      
+    </script>
+  </body>
+</html>
